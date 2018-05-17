@@ -103,5 +103,3 @@ class MoneyTracker:
                     file.write(str(x))
 
 
-mt = MoneyTracker()
-
