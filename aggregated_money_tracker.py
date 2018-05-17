@@ -1,8 +1,16 @@
 from parse_money_tracker_data import Parser
 from categories import Income, Expense
+import os
 
 
 class Aggregate:
+    if not os.path.isfile("money_tracker"):
+        os.system('clear')
+        print("You don't have a money tracker file. Creating one now.")
+        input('Continue')
+        with open("money_tracker.txt", "w") as file:
+            file.write("")
+
     _parse = Parser('money_tracker.txt')
     __list = _parse.get_data()
 
@@ -42,7 +50,4 @@ class Aggregate:
         info = self.make_a_dict()
         for x in info:
             print(x)
-
-
-
 

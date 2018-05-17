@@ -102,4 +102,3 @@ class MoneyTracker:
                 for x in all_user_data[key]['Expense']:
                     file.write(str(x))
 
-
