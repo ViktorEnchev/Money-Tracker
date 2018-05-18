@@ -4,7 +4,7 @@ import os
 
 
 class Aggregate:
-    if not os.path.isfile("money_tracker"):
+    if not os.path.isfile("money_tracker.txt"):
         os.system('clear')
         print("You don't have a money tracker file. Creating one now.")
         input('Continue')
